@@ -24,3 +24,5 @@ C:\Users\Eren\Desktop\Stuff\ASP.NET\Store\Store_Web\obj\Debug\net8.0\Store_Web.p
 C:\Users\Eren\Desktop\Stuff\ASP.NET\Store\Store_Web\obj\Debug\net8.0\Store_Web.genruntimeconfig.cache
 C:\Users\Eren\Desktop\Stuff\ASP.NET\Store\Store_Web\obj\Debug\net8.0\ref\Store_Web.dll
 C:\Users\Eren\Desktop\Stuff\ASP.NET\Store\Store_Web\obj\Debug\net8.0\Store_Web.sourcelink.json
+C:\Users\Eren\Desktop\Stuff\ASP.NET\Store\Store_Web\obj\Debug\net8.0\Store_Web.RazorAssemblyInfo.cache
+C:\Users\Eren\Desktop\Stuff\ASP.NET\Store\Store_Web\obj\Debug\net8.0\Store_Web.RazorAssemblyInfo.cs

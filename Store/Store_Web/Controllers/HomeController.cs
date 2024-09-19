@@ -2,12 +2,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Store_Web.Controllers
 {
-    class HomeController : Controller
+    public class HomeController : Controller
     {
-        public String Index()
+        public IActionResult Index()
         {
-            return "Helloo";
+            return View();
         }
-
     }
 }
