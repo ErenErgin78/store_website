@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "ccNyC1RbkjMxjkapAfsVTSiDB9gKIjsKvN7Ho2J0C48=",
+  "Source": "Store_Web",
+  "BasePath": "_content/Store_Web",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Store_Web\\wwwroot",
+      "Source": "Store_Web",
+      "ContentRoot": "C:\\Users\\Eren\\Desktop\\Stuff\\ASP.NET\\Store\\Store_Web\\wwwroot\\",
+      "BasePath": "_content/Store_Web",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Eren\\Desktop\\Stuff\\ASP.NET\\Store\\Store_Web\\wwwroot\\Error.html",
+      "SourceId": "Store_Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Eren\\Desktop\\Stuff\\ASP.NET\\Store\\Store_Web\\wwwroot\\",
+      "BasePath": "_content/Store_Web",
+      "RelativePath": "Error.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Error.html"
+    }
+  ]
+}
