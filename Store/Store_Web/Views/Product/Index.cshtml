@@ -6,11 +6,5 @@
 
 @foreach (Store_Web.Models.Product product in Model)
 {
-    <div>
-        <h3>@product.Product_Name</h3>
-        <p>@product.Product_Price</p>
-        <p>
-            <a href="/Product/Get/@product.Product_Id">Get Details </a>
-        </p>
-    </div>
+    <partial name="_ProductCard" model="@product" />
 }
