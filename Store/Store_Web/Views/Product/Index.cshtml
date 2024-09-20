@@ -1,26 +1,16 @@
-@model List<Store_Web.Models.Product>
+@section Footer {
+    <div>
+        Only for Index Footer
+    </div>
+}
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    @foreach (Store_Web.Models.Product product in Model)
-    {
-        <div>
-            <h3>@product.Product_Name</h3>
-            <p>@product.Product_Price</p>
-            <p>
-                 <a href="/Product/Get/@product.Product_Id">Get Details </a>
-            </p>
-        </div>
-
-    }
-</body>
-
-</html>
+@foreach (Store_Web.Models.Product product in Model)
+{
+    <div>
+        <h3>@product.Product_Name</h3>
+        <p>@product.Product_Price</p>
+        <p>
+            <a href="/Product/Get/@product.Product_Id">Get Details </a>
+        </p>
+    </div>
+}

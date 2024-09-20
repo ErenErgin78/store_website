@@ -1,18 +1,8 @@
-@model Store_Web.Models.Product
+<h3> @Model.Product_Name</h3>
+<p>@Model.Product_Price</p>
+<a href="/Product">Go Back</a>
 
-<!DOCTYPE html>
-<html lang="en">
+@section Header {
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    <h3> @Model.Product_Name</h3>
-    <p>@Model.Product_Price</p>
-    <a href="/Product">Go Back</a>
-</body>
-
-</html>
+    <div> Header Index Layout</div>
+}

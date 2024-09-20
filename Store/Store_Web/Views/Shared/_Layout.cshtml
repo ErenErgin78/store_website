@@ -8,13 +8,20 @@
 </head>
 
 <body>
-    <header>Store App Header</header>
+    <header>
+        Store App Header
+        @RenderSection("Header", false)
+
+    </header>
     <main>
         @RenderBody()
     </main>
     <footer>
         Footer
+        @RenderSection("Footer", false)
     </footer>
+
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
 
 </html>
