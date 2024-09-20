@@ -1,0 +1,10 @@
+@section Footer {
+    <div>
+        Only for Index Footer
+    </div>
+}
+
+@foreach (Store_Web.Models.Product product in Model)
+{
+    <partial name="_ProductCard" model="@product" />
+}
