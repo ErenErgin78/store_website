@@ -1,6 +1,7 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using Entities.Models;
 
-namespace Store_Web.Models
+namespace Repositories
 {
     public class RepositoryContext : DbContext
     {
@@ -25,3 +26,4 @@ namespace Store_Web.Models
         }
     }
 }
+
