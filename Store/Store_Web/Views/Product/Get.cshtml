@@ -1,6 +1,11 @@
-<h3> @Model.Product_Name</h3>
+<h3>@Model.Product_Name</h3>
 <p>@Model.Product_Price</p>
-<a href="/Product">Go Back</a>
+
+<div class="btn-group">
+  <a class="btn btn-outline-primary" asp-controller="Home" asp-action="Index">
+    <i class="fa-solid fa-house"></i> Home</a>
+  <a class="btn btn-outline-primary" asp-controller="Product" asp-action="Index">Go Back</a>
+</div>
 
 @section Header {
 

@@ -4,7 +4,9 @@
     </div>
 }
 
+    <div class="row my-3">
 @foreach (Store_Web.Models.Product product in Model)
 {
     <partial name="_ProductCard" model="@product" />
 }
+    </div>
