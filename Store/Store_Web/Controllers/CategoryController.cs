@@ -13,9 +13,10 @@ namespace Store_Web.Controllers
             _manager = manager;
         }
 
-        public IEnumerable<Category> Index()
+        public IActionResult Index()
         {
-            return _manager.CategoryRepository.FindAll(false);
+            var model = _manager.CategoryRepository.FindAll(false);
+            return View(model);
         }
     }
     
