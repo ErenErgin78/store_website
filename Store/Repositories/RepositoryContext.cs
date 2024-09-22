@@ -6,6 +6,7 @@ namespace Repositories
     public class RepositoryContext : DbContext
     {
         public DbSet<Product> Products { get; set; }
+        public DbSet<Category> Categories { get; set; }
         public RepositoryContext(DbContextOptions<RepositoryContext> options) : base(options)
         {
         }
@@ -23,6 +24,11 @@ namespace Repositories
                 new Product() { Product_Id = 4, Product_Name = "Keyboard", Product_Price = 4_000 },
                 new Product() { Product_Id = 5, Product_Name = "MousePad", Product_Price = 200 }
                 );
+
+            modelBuilder.Entity<Category>().HasData(
+                new Category() { Category_Id = 1, Category_Name = "Electronic" },
+                new Category() { Category_Id = 2, Category_Name = "Cosmetic" }
+            );
         }
     }
 }
