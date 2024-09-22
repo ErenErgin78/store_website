@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Eren\\Desktop\\Stuff\\ASP.NET\\Store\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D170AE29-CC32-43F4-A312-38B2F50CD868}|Store_Web\\Store_Web.csproj|c:\\users\\eren\\desktop\\stuff\\asp.net\\store\\store_web\\store_web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{D170AE29-CC32-43F4-A312-38B2F50CD868}|Store_Web\\Store_Web.csproj|solutionrelative:store_web\\store_web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4C835BE-BB0B-42FE-BE73-81C1FC4AF9C1}|Repositories\\Repositories.csproj|c:\\users\\eren\\desktop\\stuff\\asp.net\\store\\repositories\\repositories.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{E4C835BE-BB0B-42FE-BE73-81C1FC4AF9C1}|Repositories\\Repositories.csproj|solutionrelative:repositories\\repositories.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D170AE29-CC32-43F4-A312-38B2F50CD868}|Store_Web\\Store_Web.csproj|c:\\users\\eren\\desktop\\stuff\\asp.net\\store\\store_web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D170AE29-CC32-43F4-A312-38B2F50CD868}|Store_Web\\Store_Web.csproj|solutionrelative:store_web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4C835BE-BB0B-42FE-BE73-81C1FC4AF9C1}|Repositories\\Repositories.csproj|c:\\users\\eren\\desktop\\stuff\\asp.net\\store\\repositories\\contracts\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4C835BE-BB0B-42FE-BE73-81C1FC4AF9C1}|Repositories\\Repositories.csproj|solutionrelative:repositories\\contracts\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,39 +23,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Store_Web.csproj",
-              "DocumentMoniker": "C:\\Users\\Eren\\Desktop\\Stuff\\ASP.NET\\Store\\Store_Web\\Store_Web.csproj",
-              "RelativeDocumentMoniker": "Store_Web\\Store_Web.csproj",
-              "ToolTip": "C:\\Users\\Eren\\Desktop\\Stuff\\ASP.NET\\Store\\Store_Web\\Store_Web.csproj",
-              "RelativeToolTip": "Store_Web\\Store_Web.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-21T17:34:39.578Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Repositories.csproj",
-              "DocumentMoniker": "C:\\Users\\Eren\\Desktop\\Stuff\\ASP.NET\\Store\\Repositories\\Repositories.csproj",
-              "RelativeDocumentMoniker": "Repositories\\Repositories.csproj",
-              "ToolTip": "C:\\Users\\Eren\\Desktop\\Stuff\\ASP.NET\\Store\\Repositories\\Repositories.csproj",
-              "RelativeToolTip": "Repositories\\Repositories.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-21T17:31:31.778Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Eren\\Desktop\\Stuff\\ASP.NET\\Store\\Store_Web\\Program.cs",
-              "RelativeDocumentMoniker": "Store_Web\\Program.cs",
-              "ToolTip": "C:\\Users\\Eren\\Desktop\\Stuff\\ASP.NET\\Store\\Store_Web\\Program.cs",
-              "RelativeToolTip": "Store_Web\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "ICategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Eren\\Desktop\\Stuff\\ASP.NET\\Store\\Repositories\\Contracts\\ICategoryRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Contracts\\ICategoryRepository.cs",
+              "ToolTip": "C:\\Users\\Eren\\Desktop\\Stuff\\ASP.NET\\Store\\Repositories\\Contracts\\ICategoryRepository.cs",
+              "RelativeToolTip": "Repositories\\Contracts\\ICategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T20:06:12.705Z"
+              "WhenOpened": "2024-09-22T16:43:54.385Z",
+              "EditorCaption": ""
             }
           ]
         }
