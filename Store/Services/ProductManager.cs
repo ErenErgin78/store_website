@@ -21,10 +21,11 @@ namespace Services
 
         public void DeleteProduct(int id)
         {
-            var product = GetProductById(id, false); 
-            if(product is not null)
+            var product = GetProductById(id, false);
+            if (product is not null)
             {
-            _manager.ProductRepository.DeleteProduct(product);
+                _manager.ProductRepository.DeleteProduct(product);
+                _manager.Save();
             }
         }
 
