@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Entities.Models;
+using Repositories.Config;
+using System.Reflection;
 
 namespace Repositories
 {
@@ -15,20 +17,9 @@ namespace Repositories
         {
             base.OnModelCreating(modelBuilder);
 
-            //Eğer veri varsa çalışmaz. Veri yoksa bu ürünleri ekler
-            //Migration -> Up methodunun içinde insert oluşturdu
-            modelBuilder.Entity<Product>().HasData(
-                new Product() { Product_Id = 1, Product_Name = "Computer", Product_Price = 28_000 },
-                new Product() { Product_Id = 2, Product_Name = "Monitor", Product_Price = 8_000 },
-                new Product() { Product_Id = 3, Product_Name = "Mouse", Product_Price = 3_000 },
-                new Product() { Product_Id = 4, Product_Name = "Keyboard", Product_Price = 4_000 },
-                new Product() { Product_Id = 5, Product_Name = "MousePad", Product_Price = 200 }
-                );
-
-            modelBuilder.Entity<Category>().HasData(
-                new Category() { Category_Id = 1, Category_Name = "Electronic" },
-                new Category() { Category_Id = 2, Category_Name = "Cosmetic" }
-            );
+            //modelBuilder.ApplyConfiguration(new ProductConfig); 
+            //-> Alttaki kod tüm configler için bunun gibi uygular
+            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
         }
     }
 }
