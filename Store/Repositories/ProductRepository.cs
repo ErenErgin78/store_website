@@ -11,6 +11,8 @@ namespace Repositories
 
         public void CreateProduct(Product product) => Create(product);
 
+        public void DeleteProduct(Product product) => Remove(product);
+
         public IQueryable<Product> GetAllProducts(bool trackChanges) => FindAll(trackChanges);
 
         public Product? GetProductById(int id, bool trackChanges)

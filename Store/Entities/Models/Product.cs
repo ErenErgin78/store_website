@@ -9,5 +9,5 @@ public class Product
     [Required(ErrorMessage = "Product Name can't be empty")]
     public String? Product_Name { get; set; } = String.Empty;
     [Required(ErrorMessage = "Product Price can't be empty")]
-    public decimal? Product_Price { get; set; }
+    public decimal Product_Price { get; set; }
 }
