@@ -12,7 +12,7 @@ namespace Repositories.Config
             
             builder.HasData(
                 new Category() { Category_Id = 1, Category_Name = "Electronic" },
-                new Category() { Category_Id = 2, Category_Name = "Cosmetic" }
+                new Category() { Category_Id = 2, Category_Name = "Book" }
             );
         }
     }
