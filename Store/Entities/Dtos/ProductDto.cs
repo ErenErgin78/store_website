@@ -12,6 +12,7 @@ namespace Entities.Dtos
         [Required(ErrorMessage = "Product Price can't be empty")]
         public decimal Product_Price { get; init; }
         public String? Product_Summary { get; init; } = String.Empty;
+         [Required(ErrorMessage = "Product Photo can't be empty")]
         public String? Product_ImageUrl { get; set; }
         public int? CategoryId { get; init; }
     }
