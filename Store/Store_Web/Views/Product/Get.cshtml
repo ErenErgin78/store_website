@@ -1,5 +1,14 @@
-<h3>@Model.Product_Name</h3>
-<p>@Model.Product_Price</p>
+@model Product
+
+<div class="row col-md-12 text-center">
+  <h6 class="display-6">
+    @Model.Product_Name
+  </h6>
+  <img src="@Model?.Product_ImageUrl" alt="@Model?.Product_Name" width="50" />
+  <p class="lead">@Model.Product_Price.ToString("c")</p>
+</div>
+
+
 
 <div class="btn-group">
   <a class="btn btn-outline-primary" asp-controller="Home" asp-action="Index">
@@ -9,5 +18,5 @@
 
 @section Header {
 
-    <div> Header Index Layout</div>
+  <div> Header Index Layout</div>
 }
