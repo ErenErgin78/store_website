@@ -15,6 +15,10 @@ builder.Services.AddDbContext<RepositoryContext>(options =>
     b => b.MigrationsAssembly("Store_Web"));
 });
 
+//MiddleWare inşaası
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession();
+
 //Eğer IRepositoryManager ile karşılaşılırsa RepositoryManager new'lenecek
 builder.Services.AddScoped<IRepositoryManager, RepositoryManager>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
@@ -34,6 +38,7 @@ var app = builder.Build();
 app.UseStaticFiles(); //wwwroot için
 app.UseHttpsRedirection();
 app.UseRouting();
+app.UseSession();
 
 #pragma warning disable ASP0014 // Suggest using top level route registrations
 app.UseEndpoints(endpoints =>
