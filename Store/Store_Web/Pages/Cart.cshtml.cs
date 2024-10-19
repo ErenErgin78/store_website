@@ -8,40 +8,36 @@ namespace Store_Web.Pages
 {
     public class CartModel : PageModel
     {
-        private readonly IServiceManager  _manager;
-        private readonly Cart  _cart;
+        private readonly IServiceManager _manager;
+        private readonly Cart _cart;
         public Cart Cart { get; set; }
         public String ReturnUrl { get; set; } = "/";
 
-        public CartModel(IServiceManager manager)
+        public CartModel(IServiceManager manager, Cart cartService)
         {
             _manager = manager;
+            Cart = cartService;
         }
 
         public void OnGet(string returnUrl)
         {
             ReturnUrl = returnUrl ?? "/";
-            Cart = HttpContext.Session.GetJson<Cart>("cart") ?? new Cart();
         }
 
         public IActionResult OnPost(int product_Id, string returnUrl)
         {
             Product? product = _manager.ProductService.GetProductById(product_Id, false);
 
-            if(product is not null)
+            if (product is not null)
             {
-                Cart = HttpContext.Session.GetJson<Cart>("cart") ?? new Cart();
-                Cart.AddItem(product,1);
-                HttpContext.Session.SetJson<Cart>("cart", Cart);
-            } 
+                Cart.AddItem(product, 1);
+            }
             return Page();
         }
 
         public IActionResult OnPostRemove(int id, string returnUrl)
         {
-            Cart = HttpContext.Session.GetJson<Cart>("cart") ?? new Cart();
             Cart.RemoveLine(Cart.Lines.First(i => i.Product.Product_Id.Equals(id)).Product);
-            HttpContext.Session.SetJson<Cart>("cart", Cart);
             return Page();
         }
     }
