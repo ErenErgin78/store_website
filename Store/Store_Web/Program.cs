@@ -17,7 +17,13 @@ builder.Services.AddDbContext<RepositoryContext>(options =>
 
 //MiddleWare inşaası
 builder.Services.AddDistributedMemoryCache();
-builder.Services.AddSession();
+builder.Services.AddSession(options =>
+{
+    //Çerezleri isimlendirmek
+    options.Cookie.Name = "StoreApp.Session"; 
+    options.IdleTimeout = TimeSpan.FromMinutes(10);
+});
+builder.Services.AddSingleton<IHttpContextAccessor, IHttpContextAccessor>();
 
 //Eğer IRepositoryManager ile karşılaşılırsa RepositoryManager new'lenecek
 builder.Services.AddScoped<IRepositoryManager, RepositoryManager>();
