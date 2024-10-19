@@ -23,7 +23,7 @@ builder.Services.AddSession(options =>
     options.Cookie.Name = "StoreApp.Session"; 
     options.IdleTimeout = TimeSpan.FromMinutes(10);
 });
-builder.Services.AddSingleton<IHttpContextAccessor, IHttpContextAccessor>();
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
 //Eğer IRepositoryManager ile karşılaşılırsa RepositoryManager new'lenecek
 builder.Services.AddScoped<IRepositoryManager, RepositoryManager>();
@@ -34,8 +34,7 @@ builder.Services.AddScoped<IServiceManager, ServiceManager>();
 builder.Services.AddScoped<IProductService, ProductManager>();
 builder.Services.AddScoped<ICategoryService, CategoryManager>();
 
-//Cart nesnesi new'lenecek ve tüm program onu kullanacak
-builder.Services.AddSingleton<Cart>();
+builder.Services.AddScoped<Cart>();
 
 builder.Services.AddAutoMapper(typeof(Program));
 
